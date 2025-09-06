@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="login-card">
+            <!-- Avatar Section -->
+    
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="300" height="200">
+          <!-- Leaf background -->
+          <path d="M300,200 C250,100 150,100 100,200 C150,300 250,300 300,200 Z" fill="#1b5e20"/>
+          <path d="M300,200 C350,100 450,100 500,200 C450,300 350,300 300,200 Z" fill="#8bc34a"/>
+          <path d="M300,200 C250,300 350,300 400,350 C350,350 250,350 200,250 Z" fill="#a1887f"/>
+          
+          <!-- Magnifying glass -->
+          <circle cx="300" cy="200" r="100" stroke="#5d4037" stroke-width="15" fill="none"/>
+          <line x1="360" y1="260" x2="420" y2="320" stroke="#5d4037" stroke-width="20" stroke-linecap="round"/>
+        
+          <!-- Vase and cup inside -->
+          <g fill="#5d4037">
+            <path d="M280 160 h40 l-10 50 h-20z"/> <!-- Vase -->
+            <rect x="295" y="210" width="20" height="20" rx="5"/>
+            <path d="M315 210 q15 5 10 15" stroke="#5d4037" stroke-width="3" fill="none"/> <!-- Cup handle -->
+          </g>
+        
+          <!-- Cracks on vase -->
+          <path d="M290 170 l10 10 -5 15" stroke="#fff" stroke-width="2"/>
+          <path d="M310 170 l-10 15 5 15" stroke="#fff" stroke-width="2"/>
+          <path d="M295 220 l5 10" stroke="#fff" stroke-width="2"/>
+        
+          <!-- Brand name -->
+          <text x="100" y="370" font-family="Arial, sans-serif" font-size="48" font-weight="bold">
+            <tspan fill="#2e7d32">Eco</tspan><tspan fill="#8d6e63">Finds</tspan>
+          </text>
+        
+          <!-- Tagline -->
+          <text x="100" y="395" font-family="Arial, sans-serif" font-size="18" fill="#2e7d32" letter-spacing="2">
+            SUSTAINABLE SECOND-HAND MARKETPLACE
+          </text>
+        </svg>
+
+            <!-- Login Form -->
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    <span>Login</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <!-- Additional Options -->
+            <div class="additional-options">
+                <div class="divider">
+                    <span>or</span>
+                </div>
+                
+                <div class="social-login">
+                    <button class="social-btn google-btn">
+                        <i class="fab fa-google"></i>
+                        Continue with Google
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <i class="fab fa-facebook-f"></i>
+                        Continue with Facebook
+                    </button>
+                </div>
+
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                </div>
+                
+                <!-- Test redirect button (remove this after testing) -->
+                <div style="margin-top: 20px; text-align: center;">
+                    <button onclick="window.location.href='landing.html'" style="background: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                        Test: Go to Landing Page
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
